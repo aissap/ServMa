@@ -1,0 +1,17 @@
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .testimonial {
+    margin: 1rem 0;
+  }
+  
+  .testimonial cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    color: #555;
+  }
+  

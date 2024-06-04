@@ -1,0 +1,19 @@
+.services-overview {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    max-width: 200px;
+  }
+  
+  .service img {
+    width: 100%;
+  }
+  
