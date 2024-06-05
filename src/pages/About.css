@@ -1,0 +1,19 @@
+.about {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  

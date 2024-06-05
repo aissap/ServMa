@@ -1,0 +1,37 @@
+.contact-us {
+  background-color: #ead173; /* Set background color */
+  padding: 2rem;
+  color: #333; /* Set text color */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #333; /* Set button background color */
+  color: #fff; /* Set button text color */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555; /* Set hover background color */
+}

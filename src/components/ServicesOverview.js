@@ -1,27 +1,32 @@
 import React from 'react';
 import './ServicesOverview.css';
+import serviceImage1 from '../assets/service1.jpg';
+import serviceImage2 from '../assets/service2.jpg';
+import serviceImage3 from '../assets/service3.jpg';
+// Add more imports for additional service images
 
 function ServicesOverview() {
+  const serviceData = [
+    { id: 1, image: serviceImage1, title: 'Service 1', description: 'Description of Service 1' },
+    { id: 2, image: serviceImage2, title: 'Service 2', description: 'Description of Service 2' },
+    { id: 3, image: serviceImage3, title: 'Service 3', description: 'Description of Service 3' },
+    // Add more service data for additional sections
+  ];
+
+  const handleClick = (id) => {
+    // Handle click event, e.g., redirect to the respective services category
+    console.log(`Clicked on service ${id}`);
+  };
+
   return (
-    <section className="services-overview">
-      <h2>Our Services</h2>
-      <div className="services">
-        <div className="service">
-          <img src="home-repair.jpg" alt="Home Repairs" />
-          <h3>Home Repairs</h3>
-          <p>Find trusted professionals to fix anything around your house.</p>
+    <section className="services">
+      {serviceData.map(service => (
+        <div className="service-card" key={service.id} onClick={() => handleClick(service.id)}>
+          <img src={service.image} alt={service.title} />
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
         </div>
-        <div className="service">
-          <img src="personal-training.jpg" alt="Personal Training" />
-          <h3>Personal Training</h3>
-          <p>Get in shape with the help of a personal trainer.</p>
-        </div>
-        <div className="service">
-          <img src="tutoring.jpg" alt="Tutoring" />
-          <h3>Tutoring</h3>
-          <p>Improve your skills with personalized tutoring sessions.</p>
-        </div>
-      </div>
+      ))}
     </section>
   );
 }
