@@ -1,15 +1,50 @@
+/* HowItWorks.css */
 .how-it-works {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .steps {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-  }
-  
-  .step {
-    max-width: 200px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  text-align: center;
+  width: 30%;
+}
+
+.step .icon {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  margin-bottom: 20px;
+  animation: vibrate 0.5s infinite; /* Adjust duration as needed */
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  margin-bottom: 7px;
+}
+
+.step p {
+  font-size: 1rem;
+}
+
+.animated-text {
+  animation: rainbow 5s infinite; /* Adjust duration as needed */
+}
+
+@keyframes rainbow {
+  0% { color: blue; }
+  33% { color: green; }
+  66% { color: rgb(49, 230, 12); }
+  100% { color: rgb(197, 39, 158); }
+}

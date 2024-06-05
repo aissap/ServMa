@@ -3,19 +3,34 @@ import './ServicesOverview.css';
 import serviceImage1 from '../assets/service1.jpg';
 import serviceImage2 from '../assets/service2.jpg';
 import serviceImage3 from '../assets/service3.jpg';
-// Add more imports for additional service images
+import { useHistory } from 'react-router-dom';
+
 
 function ServicesOverview() {
   const serviceData = [
-    { id: 1, image: serviceImage1, title: 'Service 1', description: 'Description of Service 1' },
-    { id: 2, image: serviceImage2, title: 'Service 2', description: 'Description of Service 2' },
-    { id: 3, image: serviceImage3, title: 'Service 3', description: 'Description of Service 3' },
-    // Add more service data for additional sections
+    { 
+      id: 1, 
+      image: serviceImage1, 
+      title: 'Construction Workers', 
+      description: 'Physical construction of buildings, infrastructure, and other structures.' 
+    },
+    { 
+      id: 2, 
+      image: serviceImage2, 
+      title: 'Electrical Repair Workers', 
+      description: 'Electrical maintenance and repair services to prevent potential damage or safeguard against malfunctions.' 
+    },
+    { 
+      id: 3, 
+      image: serviceImage3, 
+      title: 'Plumber Workers', 
+      description: 'Professionals who install, maintain, and repair pipes and plumbing systems.' 
+    }
   ];
 
   const handleClick = (id) => {
-    // Handle click event, e.g., redirect to the respective services category
     console.log(`Clicked on service ${id}`);
+    // Handle click event, e.g., redirect to the respective services category
   };
 
   return (

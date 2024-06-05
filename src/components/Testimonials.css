@@ -1,17 +1,45 @@
 .testimonials {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .testimonial {
-    margin: 1rem 0;
-  }
-  
-  .testimonial cite {
-    display: block;
-    margin-top: 0.5rem;
-    font-style: normal;
-    color: #555;
-  }
-  
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial {
+  margin: 1rem 0;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  color: gold; /* Change color as needed */
+}
+
+.rating span {
+  font-size: 1.2rem;
+  margin-right: 0.2rem;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  color: #555;
+}
+
+/* Dark mode styles */
+body.dark .testimonials {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark .testimonial p {
+  color: #e0e0e0; /* Light text color for paragraphs */
+}
+
+body.dark .testimonial cite {
+  color: #bbb; /* Light cite color */
+}

@@ -8,19 +8,19 @@
 }
 
 .logo img {
-  height: 60px;  /* Default size for larger screens */
+  height: 60px;
   width: auto;
 }
 
 @media (max-width: 768px) {
   .logo img {
-    height: 50px;  /* Adjust size for tablets */
+    height: 50px;
   }
 }
 
 @media (max-width: 480px) {
   .logo img {
-    height: 40px;  /* Adjust size for mobile phones */
+    height: 40px;
   }
 }
 
@@ -46,4 +46,40 @@ nav a:hover {
   padding: 0.5rem;
   border-radius: 4px;
   border: none;
+}
+
+.dark-mode-switch {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-switch svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  transition: fill 0.3s;
+}
+
+.dark-mode-switch svg:hover {
+  fill: #ffdd57; /* Change color on hover */
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .header {
+  background-color: #1e1e1e;
+}
+
+body.dark nav a {
+  color: #e0e0e0;
+}
+
+body.dark nav a:hover {
+  background-color: #333;
 }

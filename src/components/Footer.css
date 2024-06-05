@@ -1,8 +1,9 @@
 .footer {
-  background-color: #ead173; /* Set background color */
+  background-color: #f0f0f0; /* Light gray background color */
   padding: 2rem;
-  color: #333; /* Set text color */
+  color: #333; /* Darker text color */
 }
+
 
 .footer-content {
   display: flex;
@@ -14,7 +15,7 @@
 }
 
 .footer-column h3 {
-  color: #333; /* Set text color */
+  color: #333; /* Darker text color */
 }
 
 .footer-column ul {

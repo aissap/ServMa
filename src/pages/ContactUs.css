@@ -1,7 +1,7 @@
 .contact-us {
-  background-color: #ead173; /* Set background color */
+  background-color: #028502; /* Set background color */
   padding: 2rem;
-  color: #333; /* Set text color */
+  color: #000000; /* Set text color */
 }
 
 .form-group {
@@ -33,5 +33,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #555; /* Set hover background color */
+  background-color: #ffb71b; /* Set hover background color */
 }
