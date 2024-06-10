@@ -10,6 +10,7 @@ import CreateProfile from './pages/CreateProfile';
 import ListServices from './pages/ListServices';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
+import LogOut from './pages/LogOut';
 
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/create-profile" element={<CreateProfile />} />
           <Route path="/list-services" element={<ListServices />} />
-          <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
+           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/log-in" element={<Login />} />
+          <Route path="/log-out" element={<LogOut />} />
         </Routes>
       </main>
       <Footer />

@@ -1,7 +1,35 @@
+:root {
+  --light-bg-color: #028502;
+  --light-text-color: #000000;
+  --dark-bg-color: #333333;
+  --dark-text-color: #ffffff;
+  --accent-color: #02660f;
+  --button-bg-color: #333;
+  --button-text-color: #fff;
+}
+
+body.light-mode .contact-us {
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+}
+
+body.dark-mode .contact-us {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-text-color);
+}
+
 .contact-us {
-  background-color: #028502; /* Set background color */
   padding: 2rem;
-  color: #000000; /* Set text color */
+  background: url('../assets/pattern.png'); /* Add a subtle pattern */
+  background-size: 150px 150px; /* Adjust the size of the pattern */
+  color: var(--light-text-color);
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
 }
 
 .form-group {
@@ -11,27 +39,54 @@
 label {
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+  margin-bottom: 1rem;
 }
 
 button[type="submit"] {
-  background-color: #333; /* Set button background color */
-  color: #fff; /* Set button text color */
-  padding: 0.5rem 1rem;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
-  background-color: #ffb71b; /* Set hover background color */
+  background-color: var(--accent-color);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8); /* Lighten the form background for better readability */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contact-us h2 {
+    font-size: 2rem;
+  }
+
+  input[type="email"],
+  textarea {
+    padding: 0.5rem;
+  }
+
+  button[type="submit"] {
+    padding: 0.5rem 1rem;
+  }
 }

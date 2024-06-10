@@ -42,16 +42,40 @@ nav a:hover {
   background-color: #444;
 }
 
+.search-bar {
+  flex: 1; /* Fill remaining space */
+}
+
 .search-bar input {
+  width: 100%; /* Take full width */
   padding: 0.5rem;
   border-radius: 4px;
   border: none;
 }
 
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Add space between buttons */
+}
+
+.login-button {
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
 .dark-mode-switch {
   cursor: pointer;
   font-size: 24px;
-  margin-left: auto;
   display: flex;
   align-items: center;
 }
@@ -64,7 +88,7 @@ nav a:hover {
 }
 
 .dark-mode-switch svg:hover {
-  fill: #ffdd57; /* Change color on hover */
+  fill: #ffdd57;
 }
 
 body.dark {

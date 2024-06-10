@@ -4,8 +4,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  background-image: url('../assets/pattern.png');
+  background-size: cover; 
+  background-position: center; /* Center the background image */
 }
-
 .steps {
   display: flex;
   justify-content: space-between;

@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../assets/Logo.png'; // Import the logo image
+import pattern from '../assets/pattern.png'; // Import the logo image
 import './About.css';
 
 function About() {
   return (
-    <section className="about" style={{ backgroundImage: `url(${logo})` }}>
+    <section className="about" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="about-content">
         <h2>About Us</h2>
         <p>

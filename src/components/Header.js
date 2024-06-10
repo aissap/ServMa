@@ -29,8 +29,8 @@ function Header() {
           <li><Link to="/contact">Contact Us</Link></li>
         </ul>
       </nav>
-      <div className="search-bar">
-        <input type="text" placeholder="Search services..." />
+      <div className="auth-buttons">
+        <button className="login-button">Login</button>
       </div>
       <div className="dark-mode-switch" onClick={toggleTheme}>
         {themeMode === 'light' ? <MoonIcon /> : <SunIcon />}
