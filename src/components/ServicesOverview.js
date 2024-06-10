@@ -3,7 +3,6 @@ import './ServicesOverview.css';
 import serviceImage1 from '../assets/service1.jpg';
 import serviceImage2 from '../assets/service2.jpg';
 import serviceImage3 from '../assets/service3.jpg';
-import { useHistory } from 'react-router-dom';
 
 
 function ServicesOverview() {
